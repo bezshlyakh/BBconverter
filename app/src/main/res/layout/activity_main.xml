@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_click_on_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/click_on_image_to_brose_from_gallery"
+        app:layout_constraintBottom_toTopOf="@id/IVGallery"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        android:textSize="@dimen/click_on_img_text_size"
+        android:paddingStart="@dimen/text_padding"
+        android:paddingEnd="@dimen/text_padding"/>
+
+    <ImageView
+        android:id="@+id/IVGallery"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:text="@string/click_on_image_to_brose_from_gallery"
+        app:layout_constraintBottom_toTopOf="@id/convertBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_click_on_img"
+        android:background="@color/teelTransp"
+        android:contentDescription="@string/chosen_img" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/convertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convert_to_png"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IVGallery"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

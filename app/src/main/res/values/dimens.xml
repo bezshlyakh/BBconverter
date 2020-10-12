@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_size">200dp</dimen>
+    <dimen name="click_on_img_text_size">32sp</dimen>
+    <dimen name="text_padding">5dp</dimen>
+</resources>
