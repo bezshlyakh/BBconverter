@@ -7,6 +7,6 @@ interface MainView : MvpView {
 
     fun selectImageInAlbum()
 
-//    fun setImage(string: String)
+    fun showCompleteToast()
 
 }
